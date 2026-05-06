@@ -15,10 +15,13 @@
     <h1>Olá Mundo!</h1>
     <p>Já me livrei da maldição</p>
     <script>
-        var numero = Number(window.prompt('Digite um número'))
+        var numero = Number(window.prompt('Digite seu salário'))
         var arredondamento = Number(window.prompt("Digite a quantidade de casas decimais"))
-        var numeroArredondado = numero.toFixed(arredondamento)
-        window.alert(`O número arredondado é : ${numeroArredondado}`)
+        var salarioArredondado = Number(numero.toFixed(arredondamento))//toFixed retorna uma String e não um número
+
+        var salario = salarioArredondado.toLocaleString('pt-BR', {style:'currency', currency: 'USD'})//toLocaleString funciona com Number e não com String
+
+        window.alert(`O seu salário é : ${salario}`)
     </script>
 </body>
 </html>
