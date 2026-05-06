@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos Básicos JS</title>
+    <style>
+            body{
+                background-color: rgb(38, 38, 251);
+                color: whitesmoke;
+                font: normal 20pt Arial;
+            }
+        </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        //O prompt recebe String
+        //por meio do parseInt converte para inteiro
+        //parseFloat converte para real
+        /*
+        var n1 = Number.parseInt(window.prompt("Digite o n1"))
+        var n2 = Number.parseFloat(window.prompt("Digite o n2"))
+        var numeroFloat = window.prompt("Digite o número flutuante")
+        */
+        var nome = window.prompt("Digite seu nome: ")
+        var n1 = Number(window.prompt("Digite o n1"))
+        var n2 = Number(window.prompt("Digite o n2"))
+        var numeroReal = window.prompt("Digite o número flutuante")
+            window.alert(n1+n2)
+            window.alert(`O número real é ${numeroReal}`)
+        /*
+        Temos duas formas de converter para string
+        1° String(variável)
+        2° variável.toString()
+        */
+        window.alert(`O nome ${nome} tem ${nome.length} caracteres`)//retorna o tamanho
+        window.alert(`${nome.toUpperCase()} em letras maiúsculas`)//retorna tudo em Maiúsculas
+        window.alert(`${nome.toLowerCase()} em letras minúsculas`)//retorna tudo em Minúsculas
+    </script>
+</body>
+</html>
