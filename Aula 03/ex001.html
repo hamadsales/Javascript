@@ -15,8 +15,21 @@
     <h1>Olá Mundo!</h1>
     <p>Já me livrei da maldição</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JS</p>
-    <div>Clique em mim</div>
+    <div id="div1">Clique em mim</div>
+    <div id="div2"></div>
+    <div class="div3"></div>
     <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.innerHTML = 'Parágrafo modificado'
+
+        var div1 = window.document.getElementById('div1')
+        div1.innerHTML = 'Div modificada'
+
+        var div2 = window.document.querySelector('div#div2')
+        var div3 = window.document.querySelector('div.div3')
+
+        div2.innerHTML = 'Texto adicionado por querySelector'
+        div3.innerHTML = 'Texto adicionado por querySelector'
         
     </script>
 </body>
