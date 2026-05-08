@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <meta lang="pt-BR">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background-color: rgb(50, 50, 214);
+            color: azure;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Quando clicamos na div abaixo clamamos a função clicar-->
+    <div id="area" onclick="carregar()">Mude a cor</div>
+    <script>
+        //o comando abaixo organiza o código
+        //shift + alt + F 
+
+        function carregar() {
+            var red = window.prompt("Digite o tom de vermelho de 0 a 255")
+            var green = window.prompt("Digite o tom de verde de 0 a 255")
+            var blue = window.prompt("Digite o tom de azul de 0 a 255")
+            var area = window.document.querySelector('div#area')
+            //ao carregar a função podemos escolher a cor do quadrado
+            area.style.background = `rgb(${red},${green},${blue})`
+        }
+    </script>
+</body>
+
+</html>

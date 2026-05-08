@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <meta lang="pt-BR">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background-color: rgb(50, 50, 214);
+            color: azure;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Quando clicamos na div abaixo clamamos a função clicar-->
+
+    <!--
+    
+    Eventos no site abaixo
+    
+    https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events
+    
+    -->
+    <div id="area" onclick="clicar()" onmouseenter='entrou()' onmouseout='saiu()'>Inteja aqui</div>
+    <script>
+        //o comando abaixo organiza o código
+        //shift + alt + F 
+        function clicar() {
+            var area = window.document.querySelector('div#area')
+            area.innerHTML = 'Clicou'
+            area.style.background ='red'
+        }
+        function entrou() {
+            var area = window.document.querySelector('div#area')
+            area.innerHTML = 'Entrou'
+            area.style.background ='green'
+        }
+        function saiu() {
+            var area = window.document.querySelector('div#area')
+            area.innerHTML = 'Saiu'
+            area.style.background ='blue'
+        }
+    </script>
+</body>
+
+</html>
