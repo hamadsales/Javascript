@@ -2,9 +2,13 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
+    /*Por padrão o display flex coloca tudo em linha
+    O flex-direction:column; gira o eixo forçando os elementos a ficarem um abaixo do outro*/
     flex-direction: column;
     align-items: center;
     background-color: #f4f4f4;
+    /*padding é o espaçamento interno do objeto*/
+    /*margin é o espaçamento externo do objeto*/
     padding-top: 50px;
 }
 
@@ -17,6 +21,11 @@ form {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
+    /*
+    0px: Deslocamento horizontal (sombra centralizada).
+    4px: Deslocamento vertical (a sombra "desce" 4 pixels).
+    10px: O quão esfumaçada (blur) a sombra é.
+    rgba(0, 0, 0, 0.1): A cor da sombra (preto com apenas 10% de opacidade, para ser sutil).*/
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -39,32 +48,45 @@ input[type="button"] {
     height: 50px;
     margin: 4px;
     font-size: 1.1rem;
+    /*cursor: pointer;
+    faz o mouse virar a mãozinha*/
     cursor: pointer;
     border: none;
     border-radius: 5px;
     background-color: #e0e0e0;
+    /*tempo que leva para o botão mudar de cor*/
     transition: background 0.2s;
 }
 
 /* Efeito ao passar o mouse nos botões */
 input[type="button"]:hover {
+    /*aplica o estilo somente quando o mouse passa por cima*/
     background-color: #d0d0d0;
 }
 
 /* Cores específicas para operadores e ações */
-#btnSum, #btnSubtract, #btnMultiply, #btnDivide, #equals {
+#btnSum,
+#btnSubtract,
+#btnMultiply,
+#btnDivide,
+#equals {
     background-color: #ff9500;
     color: white;
 }
 
-#btnSum:hover, #btnSubtract:hover, #btnMultiply:hover, #btnDivide:hover, #equals:hover {
+#btnSum:hover,
+#btnSubtract:hover,
+#btnMultiply:hover,
+#btnDivide:hover,
+#equals:hover {
     background-color: #e08400;
 }
 
 #eraser {
     background-color: #ff3b30;
     color: white;
-    width: 60px; /* Mantendo o padrão para não quebrar a linha */
+    width: 60px;
+    /* Mantendo o padrão para não quebrar a linha */
 }
 
 #eraser:hover {
