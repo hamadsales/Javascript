@@ -1,21 +1,79 @@
+/* Configurações gerais do corpo */
 body {
-    font: normal 20pt Arial;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding-top: 50px;
 }
 
-input {
-    font: normal 18pt Arial;
-    width: 100px;
+h1 {
+    color: #333;
 }
 
-input#screen {
-    font: normal 18pt Arial;
-    width: 410px;
-    height: 400px;
+/* Estilização da calculadora (o formulário) */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-input#enter {
-    font: normal 18pt Arial;
-    width: 410px;
-    margin-top:20px;
-    margin-bottom:20px;
+/* Estilização dos inputs de texto/número (o visor) */
+input[type="number"] {
+    width: 92%;
+    height: 40px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 1.2rem;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ebebeb;
+}
+
+/* Estilização dos botões */
+input[type="button"] {
+    width: 60px;
+    height: 50px;
+    margin: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    transition: background 0.2s;
+}
+
+/* Efeito ao passar o mouse nos botões */
+input[type="button"]:hover {
+    background-color: #d0d0d0;
+}
+
+/* Cores específicas para operadores e ações */
+#btnSum, #btnSubtract, #btnMultiply, #btnDivide, #equals {
+    background-color: #ff9500;
+    color: white;
+}
+
+#btnSum:hover, #btnSubtract:hover, #btnMultiply:hover, #btnDivide:hover, #equals:hover {
+    background-color: #e08400;
+}
+
+#eraser {
+    background-color: #ff3b30;
+    color: white;
+    width: 60px; /* Mantendo o padrão para não quebrar a linha */
+}
+
+#eraser:hover {
+    background-color: #d63027;
+}
+
+/* Mensagem de erro */
+#err {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
 }
