@@ -1,4 +1,5 @@
 //Add numbers to code
+//equals button is not funcional
 var zero = window.document.querySelector('input#btnZero').value
 var one = window.document.querySelector('input#btnOne').value
 var two = window.document.querySelector('input#btnTwo').value
