@@ -115,7 +115,7 @@ function divide() {
     }
 }
 
-    function equality() {
+function equality() {
     if (enter.value != "") { // Só faz algo se o usuário digitou um segundo número
         if (operacaoAtual == 'somar') {
             sum();
