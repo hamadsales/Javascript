@@ -37,4 +37,4 @@ Para a parte visual, utilizei **CSS Flexbox** para garantir que a calculadora fi
 3. Abra o arquivo `index.html` em qualquer navegador moderno.
 
 ---
-Desenvolvido por **[Seu Nome]** como parte dos meus estudos de Desenvolvimento Web.
+Desenvolvido por **Hamad Sales** como parte dos meus estudos de Desenvolvimento Web.
