@@ -17,6 +17,8 @@ var enter = window.document.querySelector('input#enter')
 
 var err = window.document.querySelector('div#err')
 
+var operacaoAtual = '';
+
 //the ID name is different to the function name
 //bellow is added the numbers on the enter input
 
@@ -52,6 +54,7 @@ function add0() {
 }
 
 function sum() {
+    operacaoAtual = 'somar'
     if (screen.value == 0) {
         screen.value = `${Number(enter.value)}`
         enter.value = ``
@@ -65,6 +68,7 @@ function sum() {
 }
 
 function subtract() {
+    operacaoAtual = 'subtrair'
     if (screen.value == 0) {
         screen.value = `${Number(enter.value)}`
         enter.value = ``
@@ -78,6 +82,7 @@ function subtract() {
 }
 
 function multiply() {
+    operacaoAtual = 'multiplicar'
     if (screen.value == 0) {
         screen.value = `${Number(enter.value)}`
         enter.value = ``
@@ -90,6 +95,7 @@ function multiply() {
 }
 
 function divide() {
+    operacaoAtual = 'dividir'
     //if the number on screen is different to zero in the start
     if (screen.value == 0) {
         screen.value = `${Number(enter.value)}`
@@ -109,8 +115,19 @@ function divide() {
     }
 }
 
-function equality() {
-    enter.value = ``
+    function equality() {
+    if (enter.value != "") { // Só faz algo se o usuário digitou um segundo número
+        if (operacaoAtual == 'somar') {
+            sum();
+        } else if (operacaoAtual == 'subtrair') {
+            subtract();
+        } else if (operacaoAtual == 'multiplicar') {
+            multiply();
+        } else if (operacaoAtual == 'dividir') {
+            divide();
+        }
+    }
+    enter.value = ""; // Limpa o campo de baixo no final
 }
 
 function Eraser() {
