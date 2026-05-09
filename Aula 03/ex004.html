@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos no DOM</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Somando valores</h1>
+    <!--
+    Existem vários tipos de input
+    https://www.w3schools.com/html/html_form_input_types.asp
+    -->
+    <!--o input do tipo reset funciona dentro de um formulário-->
+    <form>
+        <input type="number" id="num1"> +
+        <input type="number" id="num2">
+        <input type="button" value="Somar" onclick="somar()">
+        <input type="reset" value="Limpar">
+        <div id="res"></div>
+    </form>
+
+    <script>
+        function somar() {
+            var resultado = window.document.getElementById('res')
+
+            var num1 = Number(window.document.querySelector('input#num1').value)
+
+            var num2 = Number(window.document.querySelector('input#num2').value)
+
+            var soma = num1 + num2
+
+            resultado.innerHTML = `${soma}`
+        }
+    </script>
+</body>
+
+</html>
