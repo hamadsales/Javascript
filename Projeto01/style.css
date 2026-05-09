@@ -1,0 +1,25 @@
+body {
+    font: normal 20pt Arial;
+}
+
+input {
+    font: normal 18pt Arial;
+    width: 100px;
+}
+
+input#tela {
+    font: normal 18pt Arial;
+    width: 200px;
+    height: 400px;
+}
+
+input#num {
+    font: normal 18pt Arial;
+    width: 200px;
+    margin-top: 20px;
+}
+
+input#enter {
+    font: normal 18pt Arial;
+    width: 200px;
+}
