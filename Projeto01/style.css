@@ -7,19 +7,15 @@ input {
     width: 100px;
 }
 
-input#tela {
+input#screen {
     font: normal 18pt Arial;
-    width: 200px;
+    width: 410px;
     height: 400px;
-}
-
-input#num {
-    font: normal 18pt Arial;
-    width: 200px;
-    margin-top: 20px;
 }
 
 input#enter {
     font: normal 18pt Arial;
-    width: 200px;
+    width: 410px;
+    margin-top:20px;
+    margin-bottom:20px;
 }

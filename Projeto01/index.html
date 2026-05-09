@@ -13,34 +13,34 @@
     <h1>Calculando com JS</h1>
     <form>
         <div>
-            <input type="number" id="tela">
+            <input type="number" id="screen" value="0">
         </div>
         <div>
             <input type="number" id="enter">
         </div>
         <div>
-            <input type="button" id="one" value="1">
-            <input type="button" id="two" value="2">
-            <input type="button" id="three" value="3">
-            <input type="button" id="sum" value="+" onclick="sum()">
+            <input type="button" id="btnOne" value="1" onclick="add1()">
+            <input type="button" id="btnTwo" value="2" onclick="add2()">
+            <input type="button" id="btnThree" value="3" onclick="add3()">
+            <input type="button" id="btnSum" value="+" onclick="sum()">
         </div>
         <div>
-            <input type="button" id="four" value="4">
-            <input type="button" id="five" value="5">
-            <input type="button" id="six" value="6">
-            <input type="button" id="subtract" value="-" onclick="subtract()">
+            <input type="button" id="btnFour" value="4" onclick="add4()">
+            <input type="button" id="btnFive" value="5" onclick="add5()">
+            <input type="button" id="btnSix" value="6" onclick="add6()">
+            <input type="button" id="btnSubtract" value="-" onclick="subtract()">
         </div>
         <div>
-            <input type="button" id="seven" value="7">
-            <input type="button" id="eight" value="8">
-            <input type="button" id="nine" value="9">
-            <input type="button" id="multiply" value="x" onclick="multiply()">
+            <input type="button" id="btnSeven" value="7" onclick="add7()">
+            <input type="button" id="btnEight" value="8" onclick="add8()">
+            <input type="button" id="btnNine" value="9" onclick="add9()">
+            <input type="button" id="btnMultiply" value="x" onclick="multiply()">
         </div>
         <div>
-            <input type="button" id="zero" value="0">
-            <input type="button" id="raiz" value="√">
+            <input type="button" id="eraser" value="Eraser" onclick="Eraser()">
+            <input type="button" id="btnZero" value="0" onclick="add0()">
             <input type="button" id="divide" value="÷">
-            <input type="button" id="equals" value="=" onclick="equals()">
+            <input type="button" id="equals" value="=" onclick="equality()">
         </div>
     </form>
     <!--Script conectando o html ao JS-->
