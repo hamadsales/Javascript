@@ -14,6 +14,8 @@ var screen = window.document.querySelector('input#screen')
 
 var enter = window.document.querySelector('input#enter')
 
+var err = window.document.querySelector('div#err')
+
 //the ID name is different to the function name
 //bellow is added the numbers on the enter input
 
@@ -62,15 +64,48 @@ function sum() {
 }
 
 function subtract() {
+    if (screen.value == 0) {
+        screen.value = `${Number(enter.value)}`
+        enter.value = ``
+    } else {
+        var soma = Number(screen.value) - Number(enter.value)
+        screen.value = ``
+        screen.value = `${soma}`
+        enter.value = ``
+    }
 
 }
 
 function multiply() {
-
+    if (screen.value == 0) {
+        screen.value = `${Number(enter.value)}`
+        enter.value = ``
+    } else {
+        var soma = Number(screen.value) * Number(enter.value)
+        screen.value = ``
+        screen.value = `${soma}`
+        enter.value = ``
+    }
 }
 
 function divide() {
-
+    //if the number on screen is different to zero in the start
+    if (screen.value == 0) {
+        screen.value = `${Number(enter.value)}`
+        enter.value = ``
+        //else if in Javascript
+        //in the number on the enter is different to zero
+    } else if (enter.value != 0) {
+        var soma = Number(screen.value) / Number(enter.value)
+        screen.value = ``
+        screen.value = `${soma}`
+        enter.value = ``
+    } else {
+        //error
+        err.innerHTML = `Err: is not possible divide, please click Eraser`
+        enter.value = ``
+        screen.value = 403
+    }
 }
 
 function equality() {
@@ -80,4 +115,5 @@ function equality() {
 function Eraser() {
     enter.value = ``
     screen.value = 0
+    err.innerHTML = ``
 }
