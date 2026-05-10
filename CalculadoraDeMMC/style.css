@@ -1,0 +1,129 @@
+/* Configurações de Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Principal */
+main {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+h3#dataAtual {
+    color: #888;
+    font-size: 0.85rem;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+/* Labels e Inputs */
+h2 {
+    color: #555;
+    font-size: 0.95rem;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input[type='number'] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type='number']:focus {
+    border-color: #4a90e2;
+    background-color: #fff;
+}
+
+/* Botão */
+input[type="button"] {
+    width: 100%;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #357abd;
+}
+
+/* --- SEÇÃO DE RESULTADO (DINÂMICA) --- */
+
+section#res {
+    margin-top: 25px;
+    padding: 0; /* Começa vazio */
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+/* Estilo quando houver qualquer classe de cor */
+#res.verde, #res.amarelo, #res.laranja, #res.vermelho-claro, #res.vermelho-forte {
+    padding: 15px;
+    border: 1px solid transparent;
+}
+
+/* Definição das Cores Pastéis */
+
+#res.verde {
+    background-color: #e8f5e9; /* Verde claro */
+    color: #2e7d32;
+    border-color: #c8e6c9;
+}
+
+#res.amarelo {
+    background-color: #fffde7; /* Amarelado */
+    color: #f57f17;
+    border-color: #fff9c4;
+}
+
+#res.laranja {
+    background-color: #fff3e0; /* Avermelhado leve (Laranja) */
+    color: #e65100;
+    border-color: #ffe0b2;
+}
+
+#res.vermelho-claro {
+    background-color: #ffebee; /* Vermelho claro */
+    color: #c62828;
+    border-color: #ffcdd2;
+}
+
+#res.vermelho-forte {
+    background-color: #ffcdd2; /* Muito Vermelho */
+    color: #b71c1c;
+    border: 2px solid #ef9a9a;
+}

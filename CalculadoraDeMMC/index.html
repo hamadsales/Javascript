@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de MMC</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <main>
+        <h1>Calculadora de IMC</h1>
+        <h3 id="dataAtual"></h3>
+        <section>
+            <h2>Digite sua altura</h2>
+            <input type='number' id="altura">
+            <h2>Digite seu peso</h2>
+            <input type='number' id="peso">
+        </section>
+        <input type="button" onclick="CalculaIMC()" value="Calcular">
+        <section id="res"></section>
+    </main>
     <script src="script.js"></script>
 </body>
+
 </html>
